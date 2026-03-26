@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.card1{
+    width: 20vw;
+    height: 40vh;
+    background-color: rgb(187, 139, 67);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8%;
+}
+
+.contegaleria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60pt;
+    padding-top: 15pt;
+    padding-bottom: 10pt;
+}
+#titulogaleria{
+    font-size: 30pt;
+    font-family: "Playfair Display", serif;
+    color: rgb(202, 153, 79);
+    padding-left: 30pt;
+}
+
+.card1 img{
+    height: 200px;
+    width: 200px;
+    padding-top: 15pt;
+}
+
+.card1 h3{
+    padding-top: 10pt;
+}
+
+button{
+    margin: 10pt;
+    background-color: rgb(255, 211, 157);
+    font-size: 12pt;
+    border-radius: 15%;
+}
+
+button:hover{
+    background-color: rgb(95, 51, 0);
+}
+
+/* header carrito*/
+
+#flexCarrito img{
+    height: 40px;
+    width: 45px;
+}
+
+#flexCarrito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15pt;
+}
+
+
