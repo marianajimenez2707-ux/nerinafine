@@ -93,6 +93,17 @@
     flex-wrap: wrap;
 }
 
+a:hover{
+    color: rgb(173, 66, 73);
+}
+
+a {
+    text-decoration: none;
+    font-size: 14pt;
+    color: rgb(232, 128, 135);
+}
+
+
 .card1{
     width: 20vw;
     height: 38vh;
@@ -151,28 +162,28 @@ button:hover{
 
 
 
-    .footer {
-      background: #f5c4be;
-      padding: 1.2rem 2rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-      width: 100vw;
-      height: 15vh;
-    }
+.footer {
+    background-color: #f7d7e2;
+    padding: 1.2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100vw;
+    height: 15vh;
+}
 
-    .footer-item {
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-      text-decoration: none;
-      color: #5c3020;
-      font-family: 'Times New Roman', Times, serif;
-      font-size: 1rem;
-    }
+ .footer-item {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    text-decoration: none;
+    color: #5c3020;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+}
 
-    .footer-item img {
-      width: 26px;
-      height: 26px;
-      object-fit: contain;
+.footer-item img {
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
     }

@@ -1,7 +1,7 @@
 /* Tipografías */
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
-
+*{padding: 0px;}
 .encabezado {
     width: 100%;
     background-color: #f7d7e2;
@@ -15,6 +15,7 @@
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
     gap: 20px;
+    padding: 0px;
 }
 
 .busqueda-carrito {
@@ -87,6 +88,16 @@
     justify-content: flex-end;
     gap: 28px;
     flex-wrap: wrap;
+}
+
+a:hover{
+    color: rgb(173, 66, 73);
+}
+
+a {
+    text-decoration: none;
+    font-size: 14pt;
+    color: rgb(232, 128, 135);
 }
 
 /* CONTENIDO PRINCIPAL */
@@ -179,23 +190,23 @@
     object-fit: cover;
 }
 
-.footer {
-    background: #f5c4be;
-    padding: 1.2rem 2rem;
+footer {
+    background-color: #f7d7e2;
+    padding: 15 px ;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    width: 100vw;
+    width: 100%;
     height: 15vh;
 }
 
-.footer-item {
+ .footer-item {
     display: flex;
     align-items: center;
     gap: 0.6rem;
     text-decoration: none;
     color: #5c3020;
-    font-family: 'Caveat', cursive;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 1rem;
 }
 
@@ -203,5 +214,4 @@
     width: 26px;
     height: 26px;
     object-fit: contain;
-}
-
+    }

@@ -3,12 +3,12 @@
   const carrito = [];
 
   // Función para agregar libros al carrito
-  function comprasProd(nombre, precio, cantidadId) {
-    const cantidadTexto = document.getElementById(cantidadId).value;
-    const cantidad = parseInt(cantidadTexto);
+  function comprasProd(nombre, precio, cantidad) {
+   // const cantidadTexto = document.getElementById(cantidadId).value;
+   // const cantidad = parseInt(cantidadTexto);
 
     // Validación simple
-    if (cantidadTexto === "" || cantidad <= 0) {
+    if (cantidad === "" || cantidad <= 0) {
       alert("Por favor, ingresa una cantidad válida.");
       return;
     }
@@ -32,8 +32,9 @@
       });
     }
 
-    alert("Libro agregado: " + nombre + " (Cantidad: " + cantidad + ")");
+    alert("Producto agregado: " + nombre + " (Cantidad: " + cantidad + ")");
   }
+  
 
   // Función para mostrar el carrito
   function mostrarCarrito() {
@@ -46,12 +47,12 @@
     let total = 0;
 
     for (let i = 0; i < carrito.length; i++) {
-      const libro = carrito[i];
-      const subtotal = libro.precio * libro.cantidad;
-      mensaje += libro.nombre + "\nCantidad: " + libro.cantidad + "\nPrecio: ₡" + libro.precio + "\nSubtotal: ₡" + subtotal + "\n\n";
+      const producto = carrito[i];
+      const subtotal = producto.precio * producto.cantidad;
+      mensaje += producto.nombre + "\nCantidad: " + producto.cantidad + "\nPrecio: $" + producto.precio + "\nSubtotal: ₡" + subtotal + "\n\n";
       total += subtotal;
     }
 
-    mensaje += "Total a pagar: ₡" + total;
+    mensaje += "Total a pagar: $<   " + total;
     alert(mensaje);
   }
