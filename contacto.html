@@ -1,11 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contactos – Nerina Fine</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="CSS/contacto.css" />
 </head>
+
 <body>
-    
+
+
+<header class="encabezado">
+
+    <div class="barra-superior">
+
+    <div class="busqueda-carrito">
+<div class="busqueda">
+<id class="fa-solid fa-magnifying-glass"></i>
+<input type="text" placeholder="¿Qué estás buscando?">
+</div>
+
+<div>
+    <div id="flexCarrito">
+        <a href="index.html"</a>
+        <img src="../NerinaFine/imagenes/carrito.png">
+    </div>
+
+
+<div class="carrito">
+<id class="fa-solid fa-cart-shopping"></i>
+</div>
+</div>
+<img src="../NerinaFine/imagenes/logo.png" alt="Aretes en tendencia">
+</div>
+<nav class="menu">
+<a href="paginaprincipal.html">Página principal</a>
+<a href="catalogo.html">Catálogo</a>
+<a href="contacto.html">Contactos</a>
+</nav>
+</div>
+
+  <main class="contenido">
+    <h2 class="titulo">Queremos contactarte</h2>
+
+    <div class="grid">
+
+<form class="formulario" id="nfForm" novalidate>
+
+  <div class="campo">
+    <label for="nfNombre">Nombre:</label>
+    <input type="text" id="nfNombre" />
+  </div>
+
+  <div class="campo">
+    <label for="nfCorreo">Correo:</label>
+    <input type="email" id="nfCorreo" />
+  </div>
+
+  <div class="campo">
+    <label for="nfTelefono">Telefono:</label>
+    <input type="tel" id="nfTelefono" />
+  </div>
+
+  <div class="campo">
+    <label for="nfOrigen">De donde eres:</label>
+    <input type="text" id="nfOrigen" />
+  </div>
+
+  <button type="submit">Enviar</button>
+
+</form>
+      <div class="info">
+        <a class="info-item" href="https://instagram.com/nerinafine_jewerly" target="_blank">
+          <img src="imagenes/instagram.png" /> @nerinafine_jewerly
+        </a>
+
+        <a class="info-item" href="https://facebook.com/nerinafine_jewerly" target="_blank">
+          <img src="imagenes/facebook.png" /> @nerinafine_jewerly
+        </a>
+
+        <a class="info-item" href="https://wa.me/50695725632" target="_blank">
+          <img src="imagenes/whatsapp.png" /> 95725632
+        </a>
+
+        <div class="info-item info-ubicacion">
+          <span>Santa Barabara de Heredia,<br>300m este de la Iglesia</span>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+
+  <footer class="footer">
+    <a class="footer-item" href="#"><img src="imagenes/instagram.png" /> @nerinafine_jewerly</a>
+    <a class="footer-item" href="#"><img src="imagenes/facebook.png" /> @nerinafine_jewerly</a>
+    <a class="footer-item" href="#"><img src="imagenes/whatsapp.png" /> 95725632</a>
+  </footer>
+
+  <script src="Javasript/contactanos.js"></script>
+
 </body>
 </html>
