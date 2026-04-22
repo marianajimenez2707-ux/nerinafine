@@ -1,107 +1,127 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contactos – Nerina Fine</title>
   <link rel="icon" href="imagenes/logo.png" type="image/jpg">
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Lato:wght@300;400&display=swap"
+    rel="stylesheet" /> -->
 
-  <link rel="stylesheet" href="CSS/contacto.css" />
+  <link rel="stylesheet" href="./CSS/contacto.css" />
 </head>
 
 <body>
 
 
-<header class="encabezado">
+  <header class="encabezado">
 
     <div class="barra-superior">
 
-    <div class="busqueda-carrito">
-<div class="busqueda">
-<id class="fa-solid fa-magnifying-glass"></i>
-<input type="text" placeholder="¿Qué estás buscando?">
-</div>
-
-<div>
-    <div id="flexCarrito">
-        <a href="index.html"</a>
-        <img src="../NerinaFine/imagenes/carrito.png">
-    </div>
-
-
-<div class="carrito">
-<id class="fa-solid fa-cart-shopping"></i>
-</div>
-</div>
-<img src="../NerinaFine/imagenes/logo.png" alt="Aretes en tendencia">
-</div>
-<nav class="menu">
-<a href="paginaprincipal.html">Página principal</a>
-<a href="catalogo.html">Catálogo</a>
-<a href="contacto.html">Contactos</a>
-</nav>
-</div>
-
-  <main class="contenido">
-    <h2 class="titulo">Queremos contactarte</h2>
-
-    <div class="grid">
-
-<form class="formulario" id="nfForm" novalidate>
-
-  <div class="campo">
-    <label for="nfNombre">Nombre:</label>
-    <input type="text" id="nfNombre" />
-  </div>
-
-  <div class="campo">
-    <label for="nfCorreo">Correo:</label>
-    <input type="email" id="nfCorreo" />
-  </div>
-
-  <div class="campo">
-    <label for="nfTelefono">Telefono:</label>
-    <input type="tel" id="nfTelefono" />
-  </div>
-
-  <div class="campo">
-    <label for="nfOrigen">De donde eres:</label>
-    <input type="text" id="nfOrigen" />
-  </div>
-
-  <button type="submit">Enviar</button>
-
-</form>
-      <div class="info">
-        <a class="info-item" href="https://instagram.com/nerinafine_jewerly" target="_blank">
-          <img src="imagenes/instagram.png" /> @nerinafine_jewerly
-        </a>
-
-        <a class="info-item" href="https://facebook.com/nerinafine_jewerly" target="_blank">
-          <img src="imagenes/facebook.png" /> @nerinafine_jewerly
-        </a>
-
-        <a class="info-item" href="https://wa.me/50695725632" target="_blank">
-          <img src="imagenes/whatsapp.png" /> 95725632
-        </a>
-
-        <div class="info-item info-ubicacion">
-          <span>Santa Barabara de Heredia,<br>300m este de la Iglesia</span>
+      <div class="busqueda-carrito">
+        <div class="busqueda">
+          <id class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="¿Qué estás buscando?">
         </div>
+
+        <div>
+          <div id="flexCarrito">
+            <a href="index.html" </a>
+              <img src="imagenes/carrito.png">
+          </div>
+
+
+          <div class="carrito">
+            <id class="fa-solid fa-cart-shopping"></i>
+          </div>
+        </div>
+        <img src="imagenes/logo.png" alt="Logo">
       </div>
+      <nav class="menu">
+        <a href="paginaprincipal.html">Página principal</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="contacto.html">Contactos</a>
+      </nav>
+    </div>
+
+    <main class="contenido">
+      <h2 class="titulo">Queremos contactarte</h2>
+
+      <div class="grid">
+
+        <form class="formulario" id="nfForm" novalidate>
+
+          <div class="campo">
+            <label for="nfNombre">Nombre:</label>
+            <input type="text" id="nfNombre" />
+          </div>
+
+          <div class="campo">
+            <label for="nfCorreo">Correo:</label>
+            <input type="email" id="nfCorreo" />
+          </div>
+
+          <div class="campo">
+            <label for="nfTelefono">Telefono:</label>
+            <input type="tel" id="nfTelefono" />
+          </div>
+
+          <div class="campo">
+            <label for="nfOrigen">De donde eres:</label>
+            <input type="text" id="nfOrigen" />
+          </div>
+
+          <button id="BtnEnviar" type="submit" class="button">Enviar</button>
+
+
+        </form>
+
+        
+    <dialog id="modal">
+
+    <h2>Datos encriptados</h2>
+    <div id="hashResult" class="result-box">
 
     </div>
-  </main>
+    <button id="closeBtn">Cerrar</button>
+    </dialog>
 
 
-  <footer class="footer">
-    <a class="footer-item" href="#"><img src="imagenes/instagram.png" /> @nerinafine_jewerly</a>
-    <a class="footer-item" href="#"><img src="imagenes/facebook.png" /> @nerinafine_jewerly</a>
-    <a class="footer-item" href="#"><img src="imagenes/whatsapp.png" /> 95725632</a>
-  </footer>
+        <div class="info">
+          <a class="info-item" href="https://instagram.com/nerinafine_jewerly" target="_blank">
+            <img src="imagenes/instagram.png" /> @nerinafine_jewerly
+          </a>
 
-  <script src="Javasript/contactanos.js"></script>
+          <a class="info-item" href="https://facebook.com/nerinafine_jewerly" target="_blank">
+            <img src="imagenes/facebook.png" /> @nerinafine_jewerly
+          </a>
+
+          <a class="info-item" href="https://wa.me/50695725632" target="_blank">
+            <img src="imagenes/whatsapp.png" /> 95725632
+          </a>
+
+          <div class="info-item info-ubicacion">
+            <span>Santa Barabara de Heredia,<br>300m este de la Iglesia</span>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+
+
+    <footer class="footer">
+      <a class="footer-item" href="#"><img src="imagenes/instagram.png" /> @nerinafine_jewerly</a>
+      <a class="footer-item" href="#"><img src="imagenes/facebook.png" /> @nerinafine_jewerly</a>
+      <a class="footer-item" href="#"><img src="imagenes/whatsapp.png" /> 95725632</a>
+      <div id="hashResult" class="result-box">
+
+      </div>
+    </footer>
+
+    <script type="module" src="./Javasript/contactanos.js"></script>
 
 </body>
+
 </html>
